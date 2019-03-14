@@ -20,12 +20,12 @@
 ### 課程專案內容
 **2019年 3月 7日**<br>
 Dice<br>
-`Throw Dice` `Random` 
+`Throw Dice` `Random` <br>
 **2019年 3月 14日**<br>
 Dice<br>
-Add: `Shake Gesture` 
+Add: `Shake Gesture`  <br>
 20190314.playground<br>
-`繼承` `Method`
+`繼承` `Method` <br>
 timer<br>
 **Build Failed**<br>
 `Layout - NavBar/Toolar` `Timer.scheduledTimer`
