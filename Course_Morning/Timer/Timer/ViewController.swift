@@ -19,9 +19,10 @@ class ViewController: UIViewController {
     var second: Int = 0
     var isStart: Bool = false
     
+   
     @IBOutlet weak var timeLabel: UILabel!
     
-    @IBAction func start2(_ sender: Any) {
+    @IBAction func start(_ sender: Any) {
         if isStart == false {
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(processTimer), userInfo: nil, repeats: true)
             
@@ -35,37 +36,20 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func pause2(_ sender: Any) {
+    
+    @IBAction func pause(_ sender: Any) {
         timer.invalidate()
         isStart = false
     }
     
-    @IBAction func refresh2(_ sender: Any) {
+
+    @IBAction func refresh(_ sender: Any) {
         second = 0
         isStart = false
         timer.invalidate()
         
         timeLabel.text = "0"
     }
-    
-    
-    
-    /* 
-     * What the fuck these code did't work ?!
-     * Small problem: UIBarButtonItem can work!
-    @IBAction func start(_ sender: UIBarButtonItem) {
-        
-        
-    }
-    
-    @IBAction func pause(_ sender: UIBarButtonItem) {
-        
-    }
-    
-    @IBAction func refresh(_ sender: UIBarButtonItem) {
-        
-    }
-    */
     
     
     @objc func processTimer() {
