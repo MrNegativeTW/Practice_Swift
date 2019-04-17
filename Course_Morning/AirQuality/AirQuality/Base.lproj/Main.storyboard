@@ -56,7 +56,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="更新"/>
                                 <connections>
-                                    <action selector="refreshQuality:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgc-pO-Z76"/>
+                                    <action selector="refresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgc-pO-Z76"/>
                                 </connections>
                             </button>
                         </subviews>

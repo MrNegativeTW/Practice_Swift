@@ -15,21 +15,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var aqiData: UILabel!
     @IBOutlet weak var Status: UILabel!
     
-    let imageAccessKey = "4717907ee1ce3510cb2b8643caddafe1f1dda01933f4bf3391459c7180d2a5f6"
-    let imageSecretkey = "a69849b034ea33aeff1687fccfc0c38b6e23fcc35e5c2fd95bad9b820f85d213"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //getJson()
         getAirData()
-        
+        getUnsplashImage()
     }
 
     
     func getAirData() {
+        // 切換到 Main Thread
         DispatchQueue.main.async {
+            // 未取得資料前文字
             self.SiteName.text = "正在取得..."
             self.aqiData.text = "空品資料取得中..."
             self.Status.text = ""
@@ -51,15 +50,17 @@ class ViewController: UIViewController {
             
             let task = URLSession.shared.dataTask(with: url)
             {(data, response, error) in
-                
-                let decoder = JSONDecoder() // 透過 JSONDecoder 解 API 資訊
-                
+
+                // 透過 JSONDecoder 解 API 資訊
+                let decoder = JSONDecoder()
+
                 // 透過decoder 將自定義型別帶入，讓 decoder 自動把資料配對進型別中
-                if let data = data , let result = try? decoder.decode([AQI].self, from: data){
+                if let data = data , let result = try? decoder.decode([AQI].self, from: data) {
                     
                     // 取完資料後將結果放進 array
                     aqiArray = result
                     print(aqiArray![0].AQI!)
+                    
                     // 切換到 Main Thread
                     DispatchQueue.main.async {
                         self.SiteName.text = aqiArray![0].SiteName!
@@ -70,6 +71,13 @@ class ViewController: UIViewController {
             }
             task.resume()
         }
+    }
+
+    
+    func getUnsplashImage() {
+        let imageAccessKey = "4717907ee1ce3510cb2b8643caddafe1f1dda01933f4bf3391459c7180d2a5f6"
+        let imageSecretkey = "a69849b034ea33aeff1687fccfc0c38b6e23fcc35e5c2fd95bad9b820f85d213"
+        
     }
     
     
@@ -143,15 +151,10 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func refreshQuality(_ sender: UIButton) {
+    @IBAction func refresh(_ sender: UIButton) {
         getAirData()
+        getUnsplashImage()
     }
-    
-    
-    @IBAction func refreshBackground(_ sender: UIButton) {
-        
-    }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
