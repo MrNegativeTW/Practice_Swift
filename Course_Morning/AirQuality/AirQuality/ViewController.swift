@@ -15,15 +15,27 @@ class ViewController: UIViewController {
     @IBOutlet weak var aqiData: UILabel!
     @IBOutlet weak var Status: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        helloMessage()
         getAirData()
-        getUnsplashImage()
+//        getUnsplashImageTest1()
+        getUnsplashImageTest2()
     }
-
+    
+    func helloMessage() {
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        if hour < 12 || hour == 0 {
+        print(hour)
+        DispatchQueue.main.async {
+            self.aqiData.text = "早"
+            }
+        }
+    }
+    
     
     func getAirData() {
         // 切換到 Main Thread
@@ -36,9 +48,9 @@ class ViewController: UIViewController {
         
         let AQI_URL = "https://opendata.epa.gov.tw/ws/Data/AQI/?$format=json".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         
-        var aqiArray :[AQI]?
+        var aqiArray: [AQI]?
         
-        struct AQI: Codable{
+        struct AQI: Codable {
             let SiteName: String?
             let County: String?
             let AQI: String?
@@ -47,19 +59,18 @@ class ViewController: UIViewController {
         }
         
         if let url = URL(string: AQI_URL!) {
-            
             let task = URLSession.shared.dataTask(with: url)
             {(data, response, error) in
 
                 // 透過 JSONDecoder 解 API 資訊
                 let decoder = JSONDecoder()
 
-                // 透過decoder 將自定義型別帶入，讓 decoder 自動把資料配對進型別中
-                if let data = data , let result = try? decoder.decode([AQI].self, from: data) {
+                // 透過 decoder 將自定義型別帶入，讓 decoder 自動把資料配對進型別中
+                if let data = data, let result = try? decoder.decode([AQI].self, from: data) {
                     
                     // 取完資料後將結果放進 array
                     aqiArray = result
-                    print(aqiArray![0].AQI!)
+                    print("AQI: " + aqiArray![0].AQI!)
                     
                     // 切換到 Main Thread
                     DispatchQueue.main.async {
@@ -74,86 +85,63 @@ class ViewController: UIViewController {
     }
 
     
-    func getUnsplashImage() {
+    func getUnsplashImageTest1() {
+        // Long Term Solution
         let imageAccessKey = "4717907ee1ce3510cb2b8643caddafe1f1dda01933f4bf3391459c7180d2a5f6"
         let imageSecretkey = "a69849b034ea33aeff1687fccfc0c38b6e23fcc35e5c2fd95bad9b820f85d213"
         
+        let unsplashImageAPI = "https://api.unsplash.com/photos/?client_id=4717907ee1ce3510cb2b8643caddafe1f1dda01933f4bf3391459c7180d2a5f6".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        
+        var imageArray: [image]?
+        
+        struct image: Codable {
+            let urls: URLS?
+        }
+        enum URLS: String, Codable { case raw, full, regular, small, thumb }
+        
+        if let url = URL(string: unsplashImageAPI!) {
+            let task = URLSession.shared.dataTask(with: url) {
+                (data, response, error) in
+                
+                // 透過 JSONDecoder 解 API 資訊
+                let decoder = JSONDecoder()
+                
+                // 透過 decoder 將自定義型別帶入，讓 decoder 自動把資料配對進型別中
+                if let data = data, let result = try? decoder.decode([image].self, from: data) {
+                    
+                    // 取完資料後將結果放進 array
+                    imageArray = result
+                    print(imageArray![0].urls!)
+                    print("i got here")
+                    
+                    // 切換到 Main Thread
+                    DispatchQueue.main.async {
+                        //self.SiteName.text = imageArray![0].SiteName!
+                    }
+                }
+            }
+            task.resume()
+        }
+        unsplashImage.image = UIImage(named: "unsplashImage_PlaceHolder")
     }
     
     
-    func getJson() {
-        
-        /*struct User {
-            var userId: Int
-            var id: Int
-            var title: String
-            var completed: Bool
-            init(_ dictionary: [String: Any]) {
-                self.userId = dictionary["userId"] as? Int ?? 0
-                self.id = dictionary["id"] as? Int ?? 0
-                self.title = dictionary["title"] as? String ?? ""
-                self.completed = dictionary["completed"] as? Bool ?? false
-            }
-        }*/
-        
-        struct User: Codable{
-            var userId: Int
-            var id: Int
-            var title: String
-            var completed: Bool
+    func getUnsplashImageTest2() {
+        // Temporary Solution
+        do {
+            let d = URL(string: "https://source.unsplash.com/random")
+            let dd = try Data(contentsOf: d!)
+            self.unsplashImage.image = UIImage(data: dd)
+        } catch {
+            print("error")
         }
-        
-        
-        
-//        guard let url = URL(string: "https://opendata.epa.gov.tw/ws/Data/AQI/?format=json") else {return}
-//        guard let url = URL(string: "https://opendata.epa.gov.tw/ws/Data/AQI/?format=json") else {return}
-//        guard let url = URL(string: "https://opendata.epa.gov.tw/ws/Data/AQI/?format=json") else {return}
-//        guard let url = URL(string: "http://opendata.epa.gov.tw/webapi/Data/REWIQA/?$orderby=SiteName&$skip=0&$top=1000&format=json") else {return}
-//      guard let url = URL(string: "https://opendata.epa.gov.tw/ws/Data/AQI/?format=json") else {return}
-      guard let url = URL(string: "https://jsonplaceholder.typicode.com/todos") else {return}
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let dataResponse = data, error == nil else {
-                print(error?.localizedDescription ?? "Response Error")
-                return
-            }
-            do{
-                // here dataResponse received from a network request
-                let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse, options: [])
-                //print(jsonResponse) //Response result
-                
-                guard let jsonArray = jsonResponse as? [[String: Any]] else {
-                    return
-                }
-                //print(jsonArray) // Print whole array
-                
-                //Now get title value
-                guard let title = jsonArray[0]["title"] as? String else { return }
-                self.aqiData.text = title
-                print(title) // Print "delectus aut autem"
-                
-                for dic in jsonArray{
-                    guard let title = dic["title"] as? String else { return }
-                    print(title) //Output
-                }
-                
-                
-                
-                
-            } catch let parsingError {
-                print("Error", parsingError)
-            }
-            
-            
-        }
-        task.resume()
     }
-    
-    
     
     
     @IBAction func refresh(_ sender: UIButton) {
         getAirData()
-        getUnsplashImage()
+//        getUnsplashImageTest1()
+        getUnsplashImageTest2()
     }
     
     override func didReceiveMemoryWarning() {
