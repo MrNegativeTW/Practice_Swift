@@ -5,6 +5,7 @@
 //  Created by Trevor Wu on 2019/4/25.
 //  Copyright © 2019年 TxW Studio. All rights reserved.
 //
+// Device: iPhone 8 Plus
 
 import UIKit
 
