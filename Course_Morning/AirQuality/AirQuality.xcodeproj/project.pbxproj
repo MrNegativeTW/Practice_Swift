@@ -15,10 +15,6 @@
 		4C95B9E922674A5600A6FB7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C95B9E722674A5600A6FB7F /* LaunchScreen.storyboard */; };
 		4C95B9F422674A5600A6FB7F /* AirQualityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C95B9F322674A5600A6FB7F /* AirQualityTests.swift */; };
 		4C95B9FF22674A5600A6FB7F /* AirQualityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C95B9FE22674A5600A6FB7F /* AirQualityUITests.swift */; };
-		4CBAB39F2269D83C0014EA8E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBAB39E2269D83C0014EA8E /* NotificationCenter.framework */; };
-		4CBAB3A22269D83C0014EA8E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBAB3A12269D83C0014EA8E /* TodayViewController.swift */; };
-		4CBAB3A52269D83C0014EA8E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBAB3A32269D83C0014EA8E /* MainInterface.storyboard */; };
-		4CBAB3A92269D83C0014EA8E /* AirQualityWedget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4CBAB39C2269D83C0014EA8E /* AirQualityWedget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +32,6 @@
 			remoteGlobalIDString = 4C95B9D722674A5600A6FB7F;
 			remoteInfo = AirQuality;
 		};
-		4CBAB3A72269D83C0014EA8E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C95B9D022674A5500A6FB7F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CBAB39B2269D83C0014EA8E;
-			remoteInfo = AirQualityWedget;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				4CBAB3A92269D83C0014EA8E /* AirQualityWedget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,12 +62,7 @@
 		4C95B9FA22674A5600A6FB7F /* AirQualityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirQualityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C95B9FE22674A5600A6FB7F /* AirQualityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityUITests.swift; sourceTree = "<group>"; };
 		4C95BA0022674A5600A6FB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CBAB39C2269D83C0014EA8E /* AirQualityWedget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AirQualityWedget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBAB39E2269D83C0014EA8E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		4CBAB3A12269D83C0014EA8E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		4CBAB3A42269D83C0014EA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		4CBAB3A62269D83C0014EA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CBAB3AE2269DB8A0014EA8E /* AirQualityWedget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AirQualityWedget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,14 +87,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CBAB3992269D83C0014EA8E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CBAB39F2269D83C0014EA8E /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,7 +96,6 @@
 				4C95B9DA22674A5600A6FB7F /* AirQuality */,
 				4C95B9F222674A5600A6FB7F /* AirQualityTests */,
 				4C95B9FD22674A5600A6FB7F /* AirQualityUITests */,
-				4CBAB3A02269D83C0014EA8E /* AirQualityWedget */,
 				4CBAB39D2269D83C0014EA8E /* Frameworks */,
 				4C95B9D922674A5600A6FB7F /* Products */,
 			);
@@ -133,7 +107,6 @@
 				4C95B9D822674A5600A6FB7F /* AirQuality.app */,
 				4C95B9EF22674A5600A6FB7F /* AirQualityTests.xctest */,
 				4C95B9FA22674A5600A6FB7F /* AirQualityUITests.xctest */,
-				4CBAB39C2269D83C0014EA8E /* AirQualityWedget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,17 +151,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4CBAB3A02269D83C0014EA8E /* AirQualityWedget */ = {
-			isa = PBXGroup;
-			children = (
-				4CBAB3AE2269DB8A0014EA8E /* AirQualityWedget.entitlements */,
-				4CBAB3A12269D83C0014EA8E /* TodayViewController.swift */,
-				4CBAB3A32269D83C0014EA8E /* MainInterface.storyboard */,
-				4CBAB3A62269D83C0014EA8E /* Info.plist */,
-			);
-			path = AirQualityWedget;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,7 +166,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4CBAB3A82269D83C0014EA8E /* PBXTargetDependency */,
 			);
 			name = AirQuality;
 			productName = AirQuality;
@@ -247,23 +208,6 @@
 			productReference = 4C95B9FA22674A5600A6FB7F /* AirQualityUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		4CBAB39B2269D83C0014EA8E /* AirQualityWedget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4CBAB3AC2269D83C0014EA8E /* Build configuration list for PBXNativeTarget "AirQualityWedget" */;
-			buildPhases = (
-				4CBAB3982269D83C0014EA8E /* Sources */,
-				4CBAB3992269D83C0014EA8E /* Frameworks */,
-				4CBAB39A2269D83C0014EA8E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AirQualityWedget;
-			productName = AirQualityWedget;
-			productReference = 4CBAB39C2269D83C0014EA8E /* AirQualityWedget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,15 +232,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4C95B9D722674A5600A6FB7F;
 					};
-					4CBAB39B2269D83C0014EA8E = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
 				};
 			};
 			buildConfigurationList = 4C95B9D322674A5500A6FB7F /* Build configuration list for PBXProject "AirQuality" */;
@@ -315,7 +250,6 @@
 				4C95B9D722674A5600A6FB7F /* AirQuality */,
 				4C95B9EE22674A5600A6FB7F /* AirQualityTests */,
 				4C95B9F922674A5600A6FB7F /* AirQualityUITests */,
-				4CBAB39B2269D83C0014EA8E /* AirQualityWedget */,
 			);
 		};
 /* End PBXProject section */
@@ -342,14 +276,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CBAB39A2269D83C0014EA8E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CBAB3A52269D83C0014EA8E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,14 +308,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CBAB3982269D83C0014EA8E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CBAB3A22269D83C0014EA8E /* TodayViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -402,11 +320,6 @@
 			isa = PBXTargetDependency;
 			target = 4C95B9D722674A5600A6FB7F /* AirQuality */;
 			targetProxy = 4C95B9FB22674A5600A6FB7F /* PBXContainerItemProxy */;
-		};
-		4CBAB3A82269D83C0014EA8E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4CBAB39B2269D83C0014EA8E /* AirQualityWedget */;
-			targetProxy = 4CBAB3A72269D83C0014EA8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,14 +338,6 @@
 				4C95B9E822674A5600A6FB7F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		4CBAB3A32269D83C0014EA8E /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CBAB3A42269D83C0014EA8E /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -548,11 +453,11 @@
 		4C95BA0422674A5600A6FB7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDHY9LRPU4;
 				INFOPLIST_FILE = AirQuality/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.txwstudio.trevorwu.AirQuality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,11 +469,11 @@
 		4C95BA0522674A5600A6FB7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDHY9LRPU4;
 				INFOPLIST_FILE = AirQuality/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.txwstudio.trevorwu.AirQuality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -643,42 +548,6 @@
 			};
 			name = Release;
 		};
-		4CBAB3AA2269D83C0014EA8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = AirQualityWedget/AirQualityWedget.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDHY9LRPU4;
-				INFOPLIST_FILE = AirQualityWedget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.txwstudio.trevorwu.AirQuality.AirQualityWedget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4CBAB3AB2269D83C0014EA8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = AirQualityWedget/AirQualityWedget.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDHY9LRPU4;
-				INFOPLIST_FILE = AirQualityWedget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.txwstudio.trevorwu.AirQuality.AirQualityWedget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -714,15 +583,6 @@
 			buildConfigurations = (
 				4C95BA0A22674A5600A6FB7F /* Debug */,
 				4C95BA0B22674A5600A6FB7F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4CBAB3AC2269D83C0014EA8E /* Build configuration list for PBXNativeTarget "AirQualityWedget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4CBAB3AA2269D83C0014EA8E /* Debug */,
-				4CBAB3AB2269D83C0014EA8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
