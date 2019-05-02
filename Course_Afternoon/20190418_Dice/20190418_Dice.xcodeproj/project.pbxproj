@@ -7,35 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA11325227AC70500064D52 /* diceRollSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FA11324227AC70500064D52 /* diceRollSound.wav */; };
+		3FA11327227ACF9D00064D52 /* UIImagewithGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA11326227ACF9D00064D52 /* UIImagewithGIF.swift */; };
+		3FA1132B227AD33600064D52 /* diceRollingGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1132A227AD33600064D52 /* diceRollingGIF.gif */; };
 		4CDF19C32268B37F00B95CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF19C22268B37F00B95CBC /* AppDelegate.swift */; };
 		4CDF19C52268B37F00B95CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF19C42268B37F00B95CBC /* ViewController.swift */; };
 		4CDF19C82268B37F00B95CBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDF19C62268B37F00B95CBC /* Main.storyboard */; };
 		4CDF19CB2268B37F00B95CBC /* _0190418_Dice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF19C92268B37F00B95CBC /* _0190418_Dice.xcdatamodeld */; };
 		4CDF19CD2268B37F00B95CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDF19CC2268B37F00B95CBC /* Assets.xcassets */; };
 		4CDF19D02268B37F00B95CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDF19CE2268B37F00B95CBC /* LaunchScreen.storyboard */; };
-		4CDF19DB2268B37F00B95CBC /* _0190418_DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF19DA2268B37F00B95CBC /* _0190418_DiceTests.swift */; };
-		4CDF19E62268B37F00B95CBC /* _0190418_DiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF19E52268B37F00B95CBC /* _0190418_DiceUITests.swift */; };
 		4CDF19F42268B3D100B95CBC /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF19F32268B3D100B95CBC /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4CDF19D72268B37F00B95CBC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CDF19B72268B37F00B95CBC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CDF19BE2268B37F00B95CBC;
-			remoteInfo = 20190418_Dice;
-		};
-		4CDF19E22268B37F00B95CBC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CDF19B72268B37F00B95CBC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CDF19BE2268B37F00B95CBC;
-			remoteInfo = 20190418_Dice;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		3FA11324227AC70500064D52 /* diceRollSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diceRollSound.wav; sourceTree = "<group>"; };
+		3FA11326227ACF9D00064D52 /* UIImagewithGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagewithGIF.swift; sourceTree = "<group>"; };
+		3FA1132A227AD33600064D52 /* diceRollingGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = diceRollingGIF.gif; path = ../../../../../diceRollingGIF.gif; sourceTree = "<group>"; };
 		4CDF19BF2268B37F00B95CBC /* 20190418_Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20190418_Dice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDF19C22268B37F00B95CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CDF19C42268B37F00B95CBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,31 +31,11 @@
 		4CDF19CC2268B37F00B95CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CDF19CF2268B37F00B95CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CDF19D12268B37F00B95CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CDF19D62268B37F00B95CBC /* 20190418_DiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 20190418_DiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CDF19DA2268B37F00B95CBC /* _0190418_DiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190418_DiceTests.swift; sourceTree = "<group>"; };
-		4CDF19DC2268B37F00B95CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CDF19E12268B37F00B95CBC /* 20190418_DiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 20190418_DiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CDF19E52268B37F00B95CBC /* _0190418_DiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190418_DiceUITests.swift; sourceTree = "<group>"; };
-		4CDF19E72268B37F00B95CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CDF19F32268B3D100B95CBC /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4CDF19BC2268B37F00B95CBC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CDF19D32268B37F00B95CBC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CDF19DE2268B37F00B95CBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,8 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				4CDF19C12268B37F00B95CBC /* 20190418_Dice */,
-				4CDF19D92268B37F00B95CBC /* 20190418_DiceTests */,
-				4CDF19E42268B37F00B95CBC /* 20190418_DiceUITests */,
 				4CDF19C02268B37F00B95CBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,8 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				4CDF19BF2268B37F00B95CBC /* 20190418_Dice.app */,
-				4CDF19D62268B37F00B95CBC /* 20190418_DiceTests.xctest */,
-				4CDF19E12268B37F00B95CBC /* 20190418_DiceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,31 +67,16 @@
 				4CDF19C22268B37F00B95CBC /* AppDelegate.swift */,
 				4CDF19C42268B37F00B95CBC /* ViewController.swift */,
 				4CDF19F32268B3D100B95CBC /* ViewController2.swift */,
+				3FA11326227ACF9D00064D52 /* UIImagewithGIF.swift */,
 				4CDF19C62268B37F00B95CBC /* Main.storyboard */,
 				4CDF19CC2268B37F00B95CBC /* Assets.xcassets */,
 				4CDF19CE2268B37F00B95CBC /* LaunchScreen.storyboard */,
 				4CDF19D12268B37F00B95CBC /* Info.plist */,
 				4CDF19C92268B37F00B95CBC /* _0190418_Dice.xcdatamodeld */,
+				3FA11324227AC70500064D52 /* diceRollSound.wav */,
+				3FA1132A227AD33600064D52 /* diceRollingGIF.gif */,
 			);
 			path = 20190418_Dice;
-			sourceTree = "<group>";
-		};
-		4CDF19D92268B37F00B95CBC /* 20190418_DiceTests */ = {
-			isa = PBXGroup;
-			children = (
-				4CDF19DA2268B37F00B95CBC /* _0190418_DiceTests.swift */,
-				4CDF19DC2268B37F00B95CBC /* Info.plist */,
-			);
-			path = 20190418_DiceTests;
-			sourceTree = "<group>";
-		};
-		4CDF19E42268B37F00B95CBC /* 20190418_DiceUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4CDF19E52268B37F00B95CBC /* _0190418_DiceUITests.swift */,
-				4CDF19E72268B37F00B95CBC /* Info.plist */,
-			);
-			path = 20190418_DiceUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,42 +99,6 @@
 			productReference = 4CDF19BF2268B37F00B95CBC /* 20190418_Dice.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4CDF19D52268B37F00B95CBC /* 20190418_DiceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4CDF19ED2268B37F00B95CBC /* Build configuration list for PBXNativeTarget "20190418_DiceTests" */;
-			buildPhases = (
-				4CDF19D22268B37F00B95CBC /* Sources */,
-				4CDF19D32268B37F00B95CBC /* Frameworks */,
-				4CDF19D42268B37F00B95CBC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4CDF19D82268B37F00B95CBC /* PBXTargetDependency */,
-			);
-			name = 20190418_DiceTests;
-			productName = 20190418_DiceTests;
-			productReference = 4CDF19D62268B37F00B95CBC /* 20190418_DiceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4CDF19E02268B37F00B95CBC /* 20190418_DiceUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4CDF19F02268B37F00B95CBC /* Build configuration list for PBXNativeTarget "20190418_DiceUITests" */;
-			buildPhases = (
-				4CDF19DD2268B37F00B95CBC /* Sources */,
-				4CDF19DE2268B37F00B95CBC /* Frameworks */,
-				4CDF19DF2268B37F00B95CBC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4CDF19E32268B37F00B95CBC /* PBXTargetDependency */,
-			);
-			name = 20190418_DiceUITests;
-			productName = 20190418_DiceUITests;
-			productReference = 4CDF19E12268B37F00B95CBC /* 20190418_DiceUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,16 +112,6 @@
 					4CDF19BE2268B37F00B95CBC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					4CDF19D52268B37F00B95CBC = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 4CDF19BE2268B37F00B95CBC;
-					};
-					4CDF19E02268B37F00B95CBC = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 4CDF19BE2268B37F00B95CBC;
 					};
 				};
 			};
@@ -227,8 +129,6 @@
 			projectRoot = "";
 			targets = (
 				4CDF19BE2268B37F00B95CBC /* 20190418_Dice */,
-				4CDF19D52268B37F00B95CBC /* 20190418_DiceTests */,
-				4CDF19E02268B37F00B95CBC /* 20190418_DiceUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,23 +138,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA11325227AC70500064D52 /* diceRollSound.wav in Resources */,
 				4CDF19D02268B37F00B95CBC /* LaunchScreen.storyboard in Resources */,
 				4CDF19CD2268B37F00B95CBC /* Assets.xcassets in Resources */,
+				3FA1132B227AD33600064D52 /* diceRollingGIF.gif in Resources */,
 				4CDF19C82268B37F00B95CBC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CDF19D42268B37F00B95CBC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CDF19DF2268B37F00B95CBC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,42 +154,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDF19C52268B37F00B95CBC /* ViewController.swift in Sources */,
+				3FA11327227ACF9D00064D52 /* UIImagewithGIF.swift in Sources */,
 				4CDF19F42268B3D100B95CBC /* ViewController2.swift in Sources */,
 				4CDF19CB2268B37F00B95CBC /* _0190418_Dice.xcdatamodeld in Sources */,
 				4CDF19C32268B37F00B95CBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CDF19D22268B37F00B95CBC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CDF19DB2268B37F00B95CBC /* _0190418_DiceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CDF19DD2268B37F00B95CBC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CDF19E62268B37F00B95CBC /* _0190418_DiceUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4CDF19D82268B37F00B95CBC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4CDF19BE2268B37F00B95CBC /* 20190418_Dice */;
-			targetProxy = 4CDF19D72268B37F00B95CBC /* PBXContainerItemProxy */;
-		};
-		4CDF19E32268B37F00B95CBC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4CDF19BE2268B37F00B95CBC /* 20190418_Dice */;
-			targetProxy = 4CDF19E22268B37F00B95CBC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4CDF19C62268B37F00B95CBC /* Main.storyboard */ = {
@@ -435,7 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDHY9LRPU4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = 20190418_Dice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.txwstudio.trevorwu.-0190418-Dice";
@@ -450,79 +310,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDHY9LRPU4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = 20190418_Dice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.txwstudio.trevorwu.-0190418-Dice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4CDF19EE2268B37F00B95CBC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDHY9LRPU4;
-				INFOPLIST_FILE = 20190418_DiceTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.txwstudio.trevorwu.-0190418-DiceTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/20190418_Dice.app/20190418_Dice";
-			};
-			name = Debug;
-		};
-		4CDF19EF2268B37F00B95CBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDHY9LRPU4;
-				INFOPLIST_FILE = 20190418_DiceTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.txwstudio.trevorwu.-0190418-DiceTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/20190418_Dice.app/20190418_Dice";
-			};
-			name = Release;
-		};
-		4CDF19F12268B37F00B95CBC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDHY9LRPU4;
-				INFOPLIST_FILE = 20190418_DiceUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.txwstudio.trevorwu.-0190418-DiceUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = 20190418_Dice;
-			};
-			name = Debug;
-		};
-		4CDF19F22268B37F00B95CBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDHY9LRPU4;
-				INFOPLIST_FILE = 20190418_DiceUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.txwstudio.trevorwu.-0190418-DiceUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = 20190418_Dice;
 			};
 			name = Release;
 		};
@@ -543,24 +337,6 @@
 			buildConfigurations = (
 				4CDF19EB2268B37F00B95CBC /* Debug */,
 				4CDF19EC2268B37F00B95CBC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4CDF19ED2268B37F00B95CBC /* Build configuration list for PBXNativeTarget "20190418_DiceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4CDF19EE2268B37F00B95CBC /* Debug */,
-				4CDF19EF2268B37F00B95CBC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4CDF19F02268B37F00B95CBC /* Build configuration list for PBXNativeTarget "20190418_DiceUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4CDF19F12268B37F00B95CBC /* Debug */,
-				4CDF19F22268B37F00B95CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

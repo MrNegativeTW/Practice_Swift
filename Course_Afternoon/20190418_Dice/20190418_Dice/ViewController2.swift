@@ -44,6 +44,9 @@ class ViewController2: UIViewController {
         }
     }
     
+    @IBAction func back(_ sender: Any) {
+         dismiss(animated: true, completion: nil)
+    }
     
     
     override func didReceiveMemoryWarning() {
