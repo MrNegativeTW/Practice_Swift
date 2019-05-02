@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var aqiData: UILabel!
     @IBOutlet weak var Status: UILabel!
     
+    // Declear UserDefault
+    let myUserDefault = UserDefaults(suiteName: "group.com.txwstudio.trevorwu.AirQuality")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -77,6 +80,7 @@ class ViewController: UIViewController {
                         self.SiteName.text = aqiArray![0].SiteName!
                         self.aqiData.text = aqiArray![0].AQI!
                         self.Status.text = aqiArray![0].Status!
+                        self.myUserDefault!.setValue(aqiArray![0].AQI!, forKey: "aqiDataforWidget")
                     }
                 }
             }

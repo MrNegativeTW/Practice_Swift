@@ -32,8 +32,6 @@
                         <constraints>
                             <constraint firstItem="Vpf-Jm-kSV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SWn-5q-0FM"/>
                             <constraint firstItem="Vpf-Jm-kSV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VOI-2U-3m1"/>
-                            <constraint firstItem="Vpf-Jm-kSV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iCq-TO-qde"/>
-                            <constraint firstItem="Vpf-Jm-kSV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jV8-nD-q3l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
