@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0190509_DownloadPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-gq-QaF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9U-zb-aBz">
+                                <rect key="frame" x="356" y="686" width="31" height="30"/>
+                                <state key="normal" title="下載"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Tz3-gq-QaF" secondAttribute="bottom" id="7Iu-di-Oo8"/>
+                            <constraint firstItem="Tz3-gq-QaF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IlI-T3-7Xn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f9U-zb-aBz" secondAttribute="bottom" constant="20" id="ZQX-Oa-9bK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f9U-zb-aBz" secondAttribute="trailing" constant="27" id="acY-Ld-WKN"/>
+                            <constraint firstItem="Tz3-gq-QaF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iov-St-4tL"/>
+                            <constraint firstAttribute="trailing" secondItem="Tz3-gq-QaF" secondAttribute="trailing" id="oVA-Iz-q2N"/>
+                            <constraint firstItem="Tz3-gq-QaF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ptR-rb-PJm"/>
+                            <constraint firstItem="Tz3-gq-QaF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uTe-1T-9Pj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="download" destination="f9U-zb-aBz" id="XxS-8r-OgU"/>
+                        <outlet property="unsplashImage" destination="Tz3-gq-QaF" id="RZm-y9-r74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="126.35869565217392"/>
+        </scene>
+    </scenes>
+</document>

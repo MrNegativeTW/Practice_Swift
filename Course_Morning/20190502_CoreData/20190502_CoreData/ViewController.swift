@@ -5,13 +5,14 @@
 //  Created by student on 2019/5/2.
 //  Copyright © 2019年 student. All rights reserved.
 //
+// Device: iPhone 8 Plus
 
 import UIKit
 import CoreData
 
 class ViewController: UIViewController {
 
-    var userArr: [Users] = []
+    var userArr: [Username] = []
     
     @IBOutlet weak var userInput: UITextField!
     
