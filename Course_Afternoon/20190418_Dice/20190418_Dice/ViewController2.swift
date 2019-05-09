@@ -23,6 +23,7 @@ class ViewController2: UIViewController {
         totalPointText.text = totalPoint
         winOrLoseText.text = bigOrSmall
         winOrLose()
+        sleep(1)
     }
 
     func winOrLose() {

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F574B6B2284003800F96B09 /* diceRollingGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F574B6A2284003800F96B09 /* diceRollingGIF.gif */; };
 		3FA11325227AC70500064D52 /* diceRollSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FA11324227AC70500064D52 /* diceRollSound.wav */; };
 		3FA11327227ACF9D00064D52 /* UIImagewithGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA11326227ACF9D00064D52 /* UIImagewithGIF.swift */; };
-		3FA1132B227AD33600064D52 /* diceRollingGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1132A227AD33600064D52 /* diceRollingGIF.gif */; };
 		4CDF19C32268B37F00B95CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF19C22268B37F00B95CBC /* AppDelegate.swift */; };
 		4CDF19C52268B37F00B95CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF19C42268B37F00B95CBC /* ViewController.swift */; };
 		4CDF19C82268B37F00B95CBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDF19C62268B37F00B95CBC /* Main.storyboard */; };
@@ -20,9 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F574B6A2284003800F96B09 /* diceRollingGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diceRollingGIF.gif; sourceTree = "<group>"; };
 		3FA11324227AC70500064D52 /* diceRollSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diceRollSound.wav; sourceTree = "<group>"; };
 		3FA11326227ACF9D00064D52 /* UIImagewithGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagewithGIF.swift; sourceTree = "<group>"; };
-		3FA1132A227AD33600064D52 /* diceRollingGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = diceRollingGIF.gif; path = ../../../../../diceRollingGIF.gif; sourceTree = "<group>"; };
 		4CDF19BF2268B37F00B95CBC /* 20190418_Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20190418_Dice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDF19C22268B37F00B95CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CDF19C42268B37F00B95CBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 				4CDF19D12268B37F00B95CBC /* Info.plist */,
 				4CDF19C92268B37F00B95CBC /* _0190418_Dice.xcdatamodeld */,
 				3FA11324227AC70500064D52 /* diceRollSound.wav */,
-				3FA1132A227AD33600064D52 /* diceRollingGIF.gif */,
+				3F574B6A2284003800F96B09 /* diceRollingGIF.gif */,
 			);
 			path = 20190418_Dice;
 			sourceTree = "<group>";
@@ -138,10 +138,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F574B6B2284003800F96B09 /* diceRollingGIF.gif in Resources */,
 				3FA11325227AC70500064D52 /* diceRollSound.wav in Resources */,
 				4CDF19D02268B37F00B95CBC /* LaunchScreen.storyboard in Resources */,
 				4CDF19CD2268B37F00B95CBC /* Assets.xcassets in Resources */,
-				3FA1132B227AD33600064D52 /* diceRollingGIF.gif in Resources */,
 				4CDF19C82268B37F00B95CBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
