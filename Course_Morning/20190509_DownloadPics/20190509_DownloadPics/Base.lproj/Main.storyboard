@@ -24,11 +24,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9U-zb-aBz">
                                 <rect key="frame" x="356" y="686" width="31" height="30"/>
                                 <state key="normal" title="下載"/>
+                                <connections>
+                                    <action selector="savePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xAm-bV-b9M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFQ-tW-fv8">
+                                <rect key="frame" x="310" y="686" width="31" height="30"/>
+                                <state key="normal" title="更新"/>
+                                <connections>
+                                    <action selector="update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v08-EH-2f1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lFQ-tW-fv8" secondAttribute="bottom" constant="20" id="1xc-az-6oD"/>
                             <constraint firstAttribute="bottom" secondItem="Tz3-gq-QaF" secondAttribute="bottom" id="7Iu-di-Oo8"/>
+                            <constraint firstItem="f9U-zb-aBz" firstAttribute="leading" secondItem="lFQ-tW-fv8" secondAttribute="trailing" constant="15" id="Ca1-tn-aLe"/>
                             <constraint firstItem="Tz3-gq-QaF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IlI-T3-7Xn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f9U-zb-aBz" secondAttribute="bottom" constant="20" id="ZQX-Oa-9bK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f9U-zb-aBz" secondAttribute="trailing" constant="27" id="acY-Ld-WKN"/>
@@ -40,7 +52,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="download" destination="f9U-zb-aBz" id="XxS-8r-OgU"/>
                         <outlet property="unsplashImage" destination="Tz3-gq-QaF" id="RZm-y9-r74"/>
                     </connections>
                 </viewController>
