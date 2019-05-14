@@ -6,10 +6,7 @@
 //  Copyright © 2019年 student. All rights reserved.
 //
 // Device: iPhone 8 Plus
-// FUCK YOU APPLE
-// FUCK YOU XCODE
-// FUCK YOU SWIFT
-// THIS FUCKING PROGRAM DID'T WORK!
+// THESE CODE CAN'T WORK, ALREADY SPEND FEW HOURS TRY GET THESE CODE TO WORK.
 
 import UIKit
 import CoreData
@@ -30,6 +27,9 @@ class ViewController2: UIViewController, UITableViewDelegate, UITableViewDataSou
         fetch()
     }
     
+    @IBAction func letMeBak(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     func fetch() {
         let appDelegate =  UIApplication.shared.delegate as! AppDelegate
@@ -49,7 +49,10 @@ class ViewController2: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        // TODO: Type 'UITableViewCell' has no member 'CellStyle'
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "Cell")
+        
         cell.textLabel?.text = users[indexPath.row].userid
         return cell
     }
