@@ -73,6 +73,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     @objc func wowPin(sender: UILongPressGestureRecognizer) {
         if sender.state == UIGestureRecognizer.State.began {
+            
+            // Remove old pins, use it before declear annotation
+            mapkitView.removeAnnotations(mapkitView.annotations)
+            
             let annotation = MKPointAnnotation()
             // annotation.title = "undefine location"
             // annotation.subtitle = "undefine description"
