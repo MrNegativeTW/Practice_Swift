@@ -5,20 +5,23 @@
 //  Created by student on 2019/5/30.
 //  Copyright © 2019年 TxWStudio. All rights reserved.
 //
+// Device: Global
+// IMPORTANT: Swift 4, Not 4.2
 
 import UIKit
 import MapKit
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIGestureRecognizerDelegate {
 
+    // Connect with Storyboard
     @IBOutlet weak var mapkitView: MKMapView!
     
+    // init Location Manager
     let locationManager = CLLocationManager()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         mapkitView.delegate = self
         mapkitView.showsUserLocation = true
@@ -72,7 +75,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     
     @objc func wowPin(sender: UILongPressGestureRecognizer) {
-        if sender.state == UIGestureRecognizer.State.began {
+        if sender.state == .began {
             
             // Remove old pins, use it before declear annotation
             mapkitView.removeAnnotations(mapkitView.annotations)
