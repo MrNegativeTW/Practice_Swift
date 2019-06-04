@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import Alamofire
 import SwiftyJSON
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    // Declear UserDefault
+    let myUserDefault = UserDefaults(suiteName: "group.com.txwstudio.trevorwu.AirQuality")
+    
     @IBOutlet weak var unsplashImage: UIImageView!
     @IBOutlet weak var SiteName: UILabel!
     @IBOutlet weak var aqiData: UILabel!
     @IBOutlet weak var Status: UILabel!
     
-    // Declear UserDefault
-    let myUserDefault = UserDefaults(suiteName: "group.com.txwstudio.trevorwu.AirQuality")
+    var arrayPlace = [String]()
+    var arrayAQI = [String]()
+    var arrayStatus = [String]()
+    var arrayPM25 = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +32,7 @@ class ViewController: UIViewController {
         
         helloMessage()
         getAirData()
+        getAirDataTest()
 //        getUnsplashImageTest1()
         getUnsplashImageTest2()
     }
@@ -43,9 +51,57 @@ class ViewController: UIViewController {
     
     
     func getAirDataTest() {
-        // SwiftyJSON
-
-    }
+        // Alamofire + SwiftyJSON
+        let url = "https://opendata.epa.gov.tw/ws/Data/AQI/?$format=json"
+        Alamofire.request(url).responseJSON { (response) in
+            if response.result.isSuccess {
+                
+                let json: JSON = JSON(response.result.value!)
+                
+                // According to SwiftyJSON documentation, use following for loop when json is .Array
+                for (index, subJson):(String, JSON) in json {
+                    
+                    let SiteName = subJson["SiteName"].string
+                    //print(SiteName!)
+                    
+                    let County = subJson["County"].string
+                    //print(Country!)
+                    
+                    let Place = "\(County!) \(SiteName!)"
+                    //print(Place)
+                    self.arrayPlace.append(Place)
+                    
+                    let AQI = subJson["AQI"].string
+                    //print(AQI!)
+                    self.arrayAQI.append(AQI!)
+                    
+                    let Status = subJson["Status"].string
+                    //print(Status!)
+                    self.arrayStatus.append(Status!)
+                    
+                    let PM25 = subJson["PM2.5"].string
+                    //print(PM25!)
+                    self.arrayPM25.append(PM25!)
+                } // .for loop
+                
+//                print(self.arrayPlace)
+//                print(self.arrayAQI)
+//                print(self.arrayStatus)
+//                print(self.arrayPM25)
+                
+            } else if response.result.isFailure {
+                
+                // If can't get the data, popup an dialog box.
+                let alertController = UIAlertController(title: "Oh man...", message: "Something shit happened, we can't get that data for now, please come back later.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Damn", style: .default, handler: nil)
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+                
+            } // .response
+            
+        } // .Alamofire responseJSON
+        
+    } // .getAirDataTest
     
     
     func getAirData() {

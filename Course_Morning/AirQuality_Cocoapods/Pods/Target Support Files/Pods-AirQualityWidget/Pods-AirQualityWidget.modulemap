@@ -1,0 +1,6 @@
+framework module Pods_AirQualityWidget {
+  umbrella header "Pods-AirQualityWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}
