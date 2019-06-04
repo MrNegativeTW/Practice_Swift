@@ -13,8 +13,6 @@
 		3FD03EBC22432919000AEC3C /* NotePad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FD03EBA22432919000AEC3C /* NotePad.xcdatamodeld */; };
 		3FD03EBE22432919000AEC3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD03EBD22432919000AEC3C /* Assets.xcassets */; };
 		3FD03EC122432919000AEC3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD03EBF22432919000AEC3C /* LaunchScreen.storyboard */; };
-		3FD03ECC22432919000AEC3C /* NotePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD03ECB22432919000AEC3C /* NotePadTests.swift */; };
-		3FD03ED722432919000AEC3C /* NotePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD03ED622432919000AEC3C /* NotePadUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +42,7 @@
 		3FD03EC022432919000AEC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD03EC222432919000AEC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD03EC722432919000AEC3C /* NotePadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotePadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FD03ECB22432919000AEC3C /* NotePadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePadTests.swift; sourceTree = "<group>"; };
-		3FD03ECD22432919000AEC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD03ED222432919000AEC3C /* NotePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FD03ED622432919000AEC3C /* NotePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePadUITests.swift; sourceTree = "<group>"; };
-		3FD03ED822432919000AEC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				3FD03EB222432919000AEC3C /* NotePad */,
-				3FD03ECA22432919000AEC3C /* NotePadTests */,
-				3FD03ED522432919000AEC3C /* NotePadUITests */,
 				3FD03EB122432919000AEC3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,24 +100,6 @@
 				3FD03EBA22432919000AEC3C /* NotePad.xcdatamodeld */,
 			);
 			path = NotePad;
-			sourceTree = "<group>";
-		};
-		3FD03ECA22432919000AEC3C /* NotePadTests */ = {
-			isa = PBXGroup;
-			children = (
-				3FD03ECB22432919000AEC3C /* NotePadTests.swift */,
-				3FD03ECD22432919000AEC3C /* Info.plist */,
-			);
-			path = NotePadTests;
-			sourceTree = "<group>";
-		};
-		3FD03ED522432919000AEC3C /* NotePadUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3FD03ED622432919000AEC3C /* NotePadUITests.swift */,
-				3FD03ED822432919000AEC3C /* Info.plist */,
-			);
-			path = NotePadUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD03ECC22432919000AEC3C /* NotePadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD03ED722432919000AEC3C /* NotePadUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

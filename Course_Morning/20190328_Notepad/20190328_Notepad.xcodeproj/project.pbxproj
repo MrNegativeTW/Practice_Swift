@@ -13,8 +13,6 @@
 		3F3297B3224C57F100CA38AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3297B1224C57F100CA38AE /* Main.storyboard */; };
 		3F3297B5224C57FF00CA38AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3297B4224C57FF00CA38AE /* Assets.xcassets */; };
 		3F3297B8224C57FF00CA38AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3297B6224C57FF00CA38AE /* LaunchScreen.storyboard */; };
-		3F3297C3224C57FF00CA38AE /* _0190328_NotepadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3297C2224C57FF00CA38AE /* _0190328_NotepadTests.swift */; };
-		3F3297CE224C57FF00CA38AE /* _0190328_NotepadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3297CD224C57FF00CA38AE /* _0190328_NotepadUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +42,7 @@
 		3F3297B7224C57FF00CA38AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3297B9224C57FF00CA38AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3297BE224C57FF00CA38AE /* 20190328_NotepadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 20190328_NotepadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F3297C2224C57FF00CA38AE /* _0190328_NotepadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190328_NotepadTests.swift; sourceTree = "<group>"; };
-		3F3297C4224C57FF00CA38AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3297C9224C57FF00CA38AE /* 20190328_NotepadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 20190328_NotepadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F3297CD224C57FF00CA38AE /* _0190328_NotepadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190328_NotepadUITests.swift; sourceTree = "<group>"; };
-		3F3297CF224C57FF00CA38AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				3F3297AA224C57F100CA38AE /* 20190328_Notepad */,
-				3F3297C1224C57FF00CA38AE /* 20190328_NotepadTests */,
-				3F3297CC224C57FF00CA38AE /* 20190328_NotepadUITests */,
 				3F3297A9224C57F100CA38AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,24 +100,6 @@
 				3F3297B9224C57FF00CA38AE /* Info.plist */,
 			);
 			path = 20190328_Notepad;
-			sourceTree = "<group>";
-		};
-		3F3297C1224C57FF00CA38AE /* 20190328_NotepadTests */ = {
-			isa = PBXGroup;
-			children = (
-				3F3297C2224C57FF00CA38AE /* _0190328_NotepadTests.swift */,
-				3F3297C4224C57FF00CA38AE /* Info.plist */,
-			);
-			path = 20190328_NotepadTests;
-			sourceTree = "<group>";
-		};
-		3F3297CC224C57FF00CA38AE /* 20190328_NotepadUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3F3297CD224C57FF00CA38AE /* _0190328_NotepadUITests.swift */,
-				3F3297CF224C57FF00CA38AE /* Info.plist */,
-			);
-			path = 20190328_NotepadUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3297C3224C57FF00CA38AE /* _0190328_NotepadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3297CE224C57FF00CA38AE /* _0190328_NotepadUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
