@@ -95,7 +95,7 @@ extension UIImage {
         let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
         let gifPropertiesPointer = UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: 0)
         defer {
-            gifPropertiesPointer.deallocate()
+            gifPropertiesPointer.deallocate(capacity: 1)
         }
         let unsafePointer = Unmanaged.passUnretained(kCGImagePropertyGIFDictionary).toOpaque()
         if CFDictionaryGetValueIfPresent(cfProperties, unsafePointer, gifPropertiesPointer) == false {
