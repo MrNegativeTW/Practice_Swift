@@ -18,8 +18,9 @@ class ViewController2: UIViewController {
     
     
     var totalPoint: String!
-    var totalPointSer: String = "0"
+    var totalPointSer: String!
     var bigOrSmall: String!
+    var tempInt: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +31,15 @@ class ViewController2: UIViewController {
         
         totalPointText.text = totalPoint
         // winOrLoseText.text = bigOrSmall
-        winOrLose()
+//        winOrLose()
+        sleep(1)
     }
-
     
-    func winOrLose() {
+    func winOrLose(j: Int) {
         let i = Int(totalPoint)!
-        let j = Int(totalPointSer)!
+        
+//        let j = 0
+        
         print("i: \(i), j: \(j)  ")
         if bigOrSmall == "押大"{
             if i > 6 && j > 6 {
@@ -45,7 +48,7 @@ class ViewController2: UIViewController {
                 winOrLoseText.text = "褲子拿來"
             }
         } else if bigOrSmall == "押小" {
-            if i < 6  && j < 6 {
+            if i <= 6  && j <= 6 {
                 winOrLoseText.text = "Alright, you got it."
             } else {
                 winOrLoseText.text = "褲子拿來"
@@ -63,7 +66,6 @@ class ViewController2: UIViewController {
         
         let msg = "RandomMessage"
         socketConnector.send(message: msg)
-        //update(message: msg)
     }
     
     
@@ -88,11 +90,21 @@ extension ViewController2: PresenterProtocol{
         print("updateStatusViewWith")
     }
     
-    
     func update(message: String){
-        print("update func: \(message)")
+        print("Updata func 內的數值: \(message)")
         totalPointServer.text = message
         self.totalPointSer = message
+        
+        
+        let temp = message
+        let temps = temp.replacingOccurrences(of: "\n", with: "", options: NSString.CompareOptions.literal, range: nil)
+        let tempInt: Int! = (temps as NSString).integerValue
+
+        print("TempInt 的數值： \(tempInt)")
+        print(tempInt)
+        print(type(of: tempInt))
+        
+        winOrLose(j: tempInt)
         /*
         if let text = messageHistoryView.text{
             let newText = """

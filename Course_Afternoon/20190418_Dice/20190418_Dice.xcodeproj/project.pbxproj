@@ -11,6 +11,7 @@
 		3F3649DB229FA99A002C0E46 /* DataSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3649DA229FA99A002C0E46 /* DataSocket.swift */; };
 		3F3649DE229FC28F002C0E46 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3649DD229FC28E002C0E46 /* PresenterProtocol.swift */; };
 		3F574B6B2284003800F96B09 /* diceRollingGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F574B6A2284003800F96B09 /* diceRollingGIF.gif */; };
+		3F66700722A8E85D006C0DEC /* emptytrash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F66700622A8E85D006C0DEC /* emptytrash.wav */; };
 		3FA11325227AC70500064D52 /* diceRollSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FA11324227AC70500064D52 /* diceRollSound.wav */; };
 		3FA11327227ACF9D00064D52 /* UIImagewithGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA11326227ACF9D00064D52 /* UIImagewithGIF.swift */; };
 		4CDF19C32268B37F00B95CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF19C22268B37F00B95CBC /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 		3F3649DA229FA99A002C0E46 /* DataSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSocket.swift; sourceTree = "<group>"; };
 		3F3649DD229FC28E002C0E46 /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
 		3F574B6A2284003800F96B09 /* diceRollingGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diceRollingGIF.gif; sourceTree = "<group>"; };
+		3F66700622A8E85D006C0DEC /* emptytrash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = emptytrash.wav; sourceTree = "<group>"; };
 		3FA11324227AC70500064D52 /* diceRollSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diceRollSound.wav; sourceTree = "<group>"; };
 		3FA11326227ACF9D00064D52 /* UIImagewithGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagewithGIF.swift; sourceTree = "<group>"; };
 		4CDF19BF2268B37F00B95CBC /* 20190418_Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20190418_Dice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				4CDF19D12268B37F00B95CBC /* Info.plist */,
 				4CDF19C92268B37F00B95CBC /* _0190418_Dice.xcdatamodeld */,
 				3FA11324227AC70500064D52 /* diceRollSound.wav */,
+				3F66700622A8E85D006C0DEC /* emptytrash.wav */,
 				3F574B6A2284003800F96B09 /* diceRollingGIF.gif */,
 				3F3649D8229FA86F002C0E46 /* SocketDataManager.swift */,
 				3F3649DD229FC28E002C0E46 /* PresenterProtocol.swift */,
@@ -160,6 +163,7 @@
 				4CDF19D02268B37F00B95CBC /* LaunchScreen.storyboard in Resources */,
 				4CDF19CD2268B37F00B95CBC /* Assets.xcassets in Resources */,
 				4CDF19C82268B37F00B95CBC /* Main.storyboard in Resources */,
+				3F66700722A8E85D006C0DEC /* emptytrash.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

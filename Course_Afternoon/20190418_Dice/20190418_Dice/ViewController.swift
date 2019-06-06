@@ -58,13 +58,14 @@ class ViewController: UIViewController {
     var player: AVAudioPlayer?
     
     @IBAction func rollDice(_ sender: Any) {
+        myGifView.image = UIImage(named: "")
         diceIndex1 = Int(arc4random_uniform(UInt32(6)))
         leftDiceImage.image = UIImage(named: diceImageArray[diceIndex1])
         diceIndex2 = Int(arc4random_uniform(UInt32(6)))
         rightDiceImage.image = UIImage(named: diceImageArray[diceIndex2])
-        myGifView.image = UIImage(named: "")
         
-        guard let url = Bundle.main.url(forResource: "diceRollSound", withExtension: "wav") else { return }
+//        guard let url = Bundle.main.url(forResource: "diceRollSound", withExtension: "wav") else { return }
+        guard let url = Bundle.main.url(forResource: "emptytrash", withExtension: "wav") else { return }
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
@@ -83,7 +84,14 @@ class ViewController: UIViewController {
         // passing data to ViewController2
         let totalPoints = diceIndex1 + diceIndex2 + 2
         self.totalPoint = String(totalPoints)
-        performSegue(withIdentifier: "goScore", sender: self)
+        
+        UIView.animate(withDuration: 1, delay: 2, options: .curveEaseIn, animations: {
+            
+        }) { (true) in
+            self.performSegue(withIdentifier: "goScore", sender: self)
+
+        }
+//        performSegue(withIdentifier: "goScore", sender: self)
     }
     
     
