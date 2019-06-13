@@ -87,8 +87,9 @@ class ViewController: UIViewController {
                 // Success Login
                 // self.displayAlert(title: "您已登入", msg: "Firebase Success")
                 if Auth.auth().currentUser?.displayName == "乘客" {
-                    self.performSegue(withIdentifier: "PassengerView", sender: self)
-                } else {
+//                  self.performSegue(withIdentifier: "PassengerView", sender: self)
+                    self.performSegue(withIdentifier: "DriverView", sender: self)
+                } else if Auth.auth().currentUser?.displayName == "司機"{
                     self.performSegue(withIdentifier: "DriverView", sender: self)
                 }
                 

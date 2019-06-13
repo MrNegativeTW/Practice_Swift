@@ -10,6 +10,7 @@
 		3F249BAF22A8A491009C8301 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F249BAE22A8A491009C8301 /* GoogleService-Info.plist */; };
 		3F249BB122A8C278009C8301 /* PassengerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F249BB022A8C278009C8301 /* PassengerView.swift */; };
 		3F249BB322A8C2A1009C8301 /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F249BB222A8C2A1009C8301 /* DriverView.swift */; };
+		3F53399F22B1F28C002F23A0 /* PassDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53399E22B1F28C002F23A0 /* PassDataCell.swift */; };
 		AE7CB8E122A7B729009B7710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7CB8E022A7B729009B7710 /* AppDelegate.swift */; };
 		AE7CB8E322A7B729009B7710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7CB8E222A7B729009B7710 /* ViewController.swift */; };
 		AE7CB8E622A7B729009B7710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7CB8E422A7B729009B7710 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		3F249BAE22A8A491009C8301 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F249BB022A8C278009C8301 /* PassengerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerView.swift; sourceTree = "<group>"; };
 		3F249BB222A8C2A1009C8301 /* DriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverView.swift; sourceTree = "<group>"; };
+		3F53399E22B1F28C002F23A0 /* PassDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataCell.swift; sourceTree = "<group>"; };
 		4F2399F433954FB524D593F8 /* Pods-Uber Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber Clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber Clone/Pods-Uber Clone.release.xcconfig"; sourceTree = "<group>"; };
 		5FC88A620250B94397F7D211 /* Pods-Uber Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber Clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber Clone/Pods-Uber Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		8D049E60ED56D7E583A1C386 /* Pods_Uber_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 				AE7CB8E222A7B729009B7710 /* ViewController.swift */,
 				3F249BB022A8C278009C8301 /* PassengerView.swift */,
 				3F249BB222A8C2A1009C8301 /* DriverView.swift */,
+				3F53399E22B1F28C002F23A0 /* PassDataCell.swift */,
 				AE7CB8E422A7B729009B7710 /* Main.storyboard */,
 				AE7CB8E722A7B72B009B7710 /* Assets.xcassets */,
 				AE7CB8E922A7B72B009B7710 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE7CB8E322A7B729009B7710 /* ViewController.swift in Sources */,
+				3F53399F22B1F28C002F23A0 /* PassDataCell.swift in Sources */,
 				3F249BB122A8C278009C8301 /* PassengerView.swift in Sources */,
 				3F249BB322A8C2A1009C8301 /* DriverView.swift in Sources */,
 				AE7CB8E122A7B729009B7710 /* AppDelegate.swift in Sources */,

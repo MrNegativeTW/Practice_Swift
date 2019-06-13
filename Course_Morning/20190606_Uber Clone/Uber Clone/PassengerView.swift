@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 import MapKit
 import CoreLocation
 
@@ -17,6 +18,8 @@ class PassengerView: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
     let userLocation = CLLocationCoordinate2D()
     
     var lyftBeenCalled = false
+    
+    let reference: DatabaseReference = Database.database().reference()
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -35,7 +38,7 @@ class PassengerView: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         locationManager.startUpdatingLocation()
     }
     
-    @IBAction func logout(_ sender: Any) {
+    @IBAction func logoutButton(_ sender: Any) {
         
         do {
             try Auth.auth().signOut()
@@ -46,20 +49,55 @@ class PassengerView: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         
     } // .logout
     
+    @IBOutlet weak var giveMeRideButton: UIButton!
     
     @IBAction func giveMeRide(_ sender: Any) {
-        if lyftBeenCalled {
-//            calcelLyft()
-        } else {
-//            callLyft()
+        
+        if let email = Auth.auth().currentUser?.email {
+            
+            if lyftBeenCalled {
+                // 取消
+                
+                reference.child("passRequest").queryOrdered(byChild: "email").queryEqual(toValue: email).observe(DataEventType.childAdded) { (DataSnapshot) in
+                    DataSnapshot.ref.removeValue()
+                    self.reference.child("passRequest").removeAllObservers()
+                }
+                cancelLyftMode()
+                
+            } else {
+                // 新增
+                let passRequest : [String: Any] = ["email": email, "lat": userLocation.latitude,"lon":userLocation.longitude]
+                reference.child("passRequest").childByAutoId().setValue(passRequest)
+                callLyftMode()
+                
+            }
+            
         }
+        
     } // .giveMeRide
+    
+    func callLyftMode() {
+        self.giveMeRideButton.setTitle("Cancel Lyft", for: .normal)
+        self.giveMeRideButton.backgroundColor = UIColor.red
+        lyftBeenCalled = true
+    } // .callLyft
+    
+    func cancelLyftMode() {
+        self.giveMeRideButton.setTitle("Give me a ride!", for: .normal)
+        self.giveMeRideButton.backgroundColor = UIColor.gray
+        lyftBeenCalled = false
+    } // .callLyftMode
+    
+    
+    
+    
+    
     
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let coordinate: CLLocationCoordinate2D = manager.location?.coordinate {
             
-            userLocation = coordinate
+            let userLocation = coordinate
             
             let region = MKCoordinateRegion(center: userLocation, latitudinalMeters: 0.003, longitudinalMeters: 0.003)
             mapView.setRegion(region, animated: true)
