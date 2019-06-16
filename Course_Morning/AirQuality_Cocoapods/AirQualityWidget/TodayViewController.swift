@@ -9,6 +9,8 @@
 import UIKit
 import NotificationCenter
 
+var mySelect = 0
+
 class TodayViewController: UIViewController, NCWidgetProviding {
         
     @IBOutlet weak var widgetText: UILabel!
@@ -20,12 +22,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
         
-        widgetText.text = self.myUserDefault!.value(forKey: "aqiDataforWidget") as? String
-        //widgetText.text = "wow no content"
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        /*widgetText.text = self.myUserDefault!.value(forKey: "aqiDataforWidget") as? String*/
+        widgetText.text = self.myUserDefault!.value(forKey: "aqiDataforWidget") as? String
+        mySelect = (self.myUserDefault!.value(forKey: "mySelect") as? Int)!
+        print(mySelect)
     }
     
     
