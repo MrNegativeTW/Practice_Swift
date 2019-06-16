@@ -7,40 +7,102 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
+import Firebase
+import CoreLocation
+import MapKit
 
-class DriverView: UITableViewController {
+class DriverView: UITableViewController, CLLocationManagerDelegate {
 
+    var LocationManager = CLLocationManager()
+    
+    let reference = Database.database().reference()
+    
+    var passRequests: [DataSnapshot] = []
+    
+    let driverLocation = CLLocationCoordinate2D()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        retriveData()
+        
+        LocationManager.delegate = self
+        LocationManager.desiredAccuracy = kCLLocationAccuracyBest
+        LocationManager.requestWhenInUseAuthorization()
+        LocationManager.startUpdatingLocation()
+        
+        tableView.reloadData()
     }
-
+    
+    
+    func  retriveData() {
+        reference.child("passRequest").observe(.childAdded) { (DataSnapshot) in
+            self.passRequests.append(DataSnapshot)
+            DataSnapshot.ref.removeAllObservers()
+        } // .reference child
+        
+        self.tableView.reloadData()
+    }
+    
+    
+    @IBAction func logoutButton(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            navigationController?.dismiss(animated: true, completion: nil)
+        } catch  {
+            print("wow you can't sign out!")
+        }
+    }
+    
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 6
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        // Configure the cell...
+        let snapShot = passRequests[indexPath.row]
+        if let passRequestDic = snapShot.value as? [String: Any]{
+            if let email = passRequestDic["email"] as? String {
+                if let latitude = passRequestDic["lat"] as? Double {
+                    if let longtitude = passRequestDic["lon"] as? Double {
+                        let passCLLocation  = CLLocation(latitude: latitude, longitude: longtitude)
+                        
+                        let driverCLLocation = CLLocation(latitude: driverLocation.latitude, longitude: driverLocation.longitude)
+                        
+                        let distance = passCLLocation.distance(from: driverCLLocation) / 1000
+                        
+                        let roundDist = round(distance * 100) / 100
+                        
+                        if let image = UIImage(named: "defaultProfileImage") {
+                            let passInfo = "\(roundDist) KM Away"
+                            cell.configureCell
+                        } // .image
+                        
+                    }
+                }
+                
+            }
+        }
+        
+//         Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

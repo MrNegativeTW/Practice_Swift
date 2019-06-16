@@ -121,18 +121,51 @@
         <scene sceneID="WdR-vS-GQ1">
             <objects>
                 <tableViewController id="AQI-oh-y0v" customClass="DriverView" customModule="Uber_Clone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7dw-9L-c4x">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7dw-9L-c4x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="s8E-tu-DKq">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="s8E-tu-DKq" customClass="PassDataCell" customModule="Uber_Clone" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s8E-tu-DKq" id="Ufs-uI-XMO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s8E-tu-DKq" id="Ufs-uI-XMO" customClass="PassDataCell" customModule="Uber_Clone" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="hDS-d7-cel">
+                                            <rect key="frame" x="20" y="14" width="70" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="fO7-qE-aUT"/>
+                                                <constraint firstAttribute="width" constant="70" id="nRS-hQ-Xzl"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PassengerMaill.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mg-5P-ebD">
+                                            <rect key="frame" x="116" y="14" width="216" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf4-H7-6gB">
+                                            <rect key="frame" x="116" y="52" width="179" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hDS-d7-cel" firstAttribute="top" secondItem="Ufs-uI-XMO" secondAttribute="topMargin" constant="3" id="HMd-Tw-q8w"/>
+                                        <constraint firstItem="hDS-d7-cel" firstAttribute="leading" secondItem="Ufs-uI-XMO" secondAttribute="leadingMargin" id="ccN-8N-0rA"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="hDS-d7-cel" secondAttribute="bottom" constant="5" id="gbA-Kt-933"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="passEmail" destination="6Mg-5P-ebD" id="TRj-1K-vWj"/>
+                                    <outlet property="passLocation" destination="Tf4-H7-6gB" id="lhd-jy-294"/>
+                                    <outlet property="profileImage" destination="hDS-d7-cel" id="Sv8-KZ-cXp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -140,7 +173,13 @@
                             <outlet property="delegate" destination="AQI-oh-y0v" id="YcB-HM-1aY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="unb-n6-RD3"/>
+                    <navigationItem key="navigationItem" id="unb-n6-RD3">
+                        <barButtonItem key="leftBarButtonItem" title="Lotout" id="3xj-4e-NRa">
+                            <connections>
+                                <action selector="logoutButton:" destination="AQI-oh-y0v" id="ldI-o4-MiL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whX-K3-azf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +206,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="GiveMeaRide:" destination="YeB-Da-Asj" eventType="touchUpInside" id="728-NC-je4"/>
                                     <action selector="giveMeRide:" destination="YeB-Da-Asj" eventType="touchUpInside" id="hC2-Me-Mn1"/>
                                 </connections>
                             </button>
@@ -178,11 +216,12 @@
                     <navigationItem key="navigationItem" id="sAl-kC-Bcg">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="wyF-Ys-W4p">
                             <connections>
-                                <action selector="logout:" destination="YeB-Da-Asj" id="62c-gK-PxU"/>
+                                <action selector="logoutButton:" destination="YeB-Da-Asj" id="62c-gK-PxU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="giveMeRideButton" destination="2yW-RS-oJh" id="8Su-SU-9UY"/>
                         <outlet property="mapView" destination="FrY-oG-ost" id="Wo7-gN-j69"/>
                     </connections>
                 </viewController>
@@ -229,5 +268,6 @@
     </scenes>
     <resources>
         <image name="BG" width="767" height="1297"/>
+        <image name="defaultProfileImage" width="102" height="102"/>
     </resources>
 </document>

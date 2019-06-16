@@ -48,8 +48,8 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>wow</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>wow we need your location</string>
+	<string>Give me your location!</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Give me your location!</string>
 </dict>
 </plist>
