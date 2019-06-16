@@ -30,8 +30,6 @@ class ViewController2: UIViewController {
         connect()
         
         totalPointText.text = totalPoint
-        // winOrLoseText.text = bigOrSmall
-//        winOrLose()
         sleep(1)
     }
     
