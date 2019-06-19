@@ -8,10 +8,12 @@
 
 import UIKit
 
-var mySelect = 0
+//var mySelect = 0
 
 class SettingViewController: UITableViewController {
 
+    // Declear UserDefault
+    let myUserDefault = UserDefaults(suiteName: "group.com.txwstudio.trevorwu.AirQuality")
     
     var arrayPlace = [String]()
     
@@ -56,7 +58,8 @@ class SettingViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        mySelect = indexPath.row
+//        mySelect = indexPath.row
+        UserDefaults.standard.set(indexPath.row, forKey: "mySelect")
     }
 
 

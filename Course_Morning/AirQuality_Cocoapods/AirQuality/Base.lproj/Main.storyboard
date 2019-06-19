@@ -86,11 +86,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mask Hint" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1d-9D-42h">
+                                <rect key="frame" x="20" y="449" width="374" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bTp-Nb-ngN" secondAttribute="trailing" constant="20" id="1yB-sa-aZd"/>
+                            <constraint firstItem="T1d-9D-42h" firstAttribute="top" secondItem="0dS-qW-4xj" secondAttribute="bottom" constant="16" id="765-Nr-dx4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iZp-tn-7YM" secondAttribute="bottom" constant="52" id="Cw7-2N-PqW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1d-9D-42h" secondAttribute="trailing" constant="20" id="DRe-Sg-zcJ"/>
+                            <constraint firstItem="T1d-9D-42h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IGg-2x-ztr"/>
                             <constraint firstItem="LbQ-yK-LE8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ijd-qs-nVp"/>
                             <constraint firstAttribute="trailing" secondItem="LbQ-yK-LE8" secondAttribute="trailing" id="QDV-dq-3VI"/>
                             <constraint firstItem="LbQ-yK-LE8" firstAttribute="top" secondItem="7Qh-en-LGc" secondAttribute="bottom" constant="8.5" id="Qqe-EK-LX8"/>
@@ -116,12 +125,13 @@
                         <outlet property="SiteName" destination="bTp-Nb-ngN" id="wLh-8D-xQv"/>
                         <outlet property="Status" destination="0dS-qW-4xj" id="y01-2R-UJr"/>
                         <outlet property="aqiData" destination="LbQ-yK-LE8" id="wZl-ce-QIy"/>
+                        <outlet property="maskHint" destination="T1d-9D-42h" id="VVv-r6-xVS"/>
                         <outlet property="unsplashImage" destination="FDh-Ha-fFv" id="oWZ-d5-nkL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25.78125" y="37.5"/>
+            <point key="canvasLocation" x="24.637681159420293" y="37.5"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="zum-5J-yu4">

@@ -8,6 +8,8 @@
 
 import UIKit
 import NotificationCenter
+//import Alamofire
+//import SwiftyJSON
 
 var mySelect = 0
 
@@ -26,8 +28,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewDidAppear(_ animated: Bool) {
         widgetText.text = self.myUserDefault!.value(forKey: "aqiDataforWidget") as? String
-        mySelect = (self.myUserDefault!.value(forKey: "mySelect") as? Int)!
-        print(mySelect)
     }
     
     
