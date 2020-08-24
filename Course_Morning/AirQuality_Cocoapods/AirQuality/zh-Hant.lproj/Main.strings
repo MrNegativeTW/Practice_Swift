@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "0dS-qW-4xj"; */
+"0dS-qW-4xj.text" = "Status";
+
+/* Class = "UILabel"; text = "AQI"; ObjectID = "7Qh-en-LGc"; */
+"7Qh-en-LGc.text" = "AQI";
+
+/* Class = "UIBarButtonItem"; title = "完成"; ObjectID = "Kjq-Sn-YVi"; */
+"Kjq-Sn-YVi.title" = "完成";
+
+/* Class = "UILabel"; text = "取得中..."; ObjectID = "LbQ-yK-LE8"; */
+"LbQ-yK-LE8.text" = "取得中...";
+
+/* Class = "UINavigationItem"; title = "選擇測站"; ObjectID = "SJl-vD-DJK"; */
+"SJl-vD-DJK.title" = "選擇測站";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "WOg-aV-KdR"; */
+"WOg-aV-KdR.title" = "Item";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "aXa-O5-9N0"; */
+"aXa-O5-9N0.text" = "Title";
+
+/* Class = "UILabel"; text = "SiteName"; ObjectID = "bTp-Nb-ngN"; */
+"bTp-Nb-ngN.text" = "SiteName";
+
+/* Class = "UIButton"; normalTitle = "下載"; ObjectID = "cex-kl-RuR"; */
+"cex-kl-RuR.normalTitle" = "下載";
+
+/* Class = "UIBarButtonItem"; title = "確定"; ObjectID = "hbm-YL-qjF"; */
+"hbm-YL-qjF.title" = "確定";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "mBa-bV-Eg8"; */
+"mBa-bV-Eg8.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "測站"; ObjectID = "pqV-Df-bvN"; */
+"pqV-Df-bvN.normalTitle" = "測站";
+
+/* Class = "UINavigationItem"; title = "選擇測站"; ObjectID = "tbK-7Q-AcK"; */
+"tbK-7Q-AcK.title" = "選擇測站";
+
+/* Class = "UIButton"; normalTitle = "更新"; ObjectID = "ugd-yb-mVe"; */
+"ugd-yb-mVe.normalTitle" = "更新";

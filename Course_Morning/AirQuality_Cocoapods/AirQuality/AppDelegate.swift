@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Alamofire
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UIPopoverPresentationControllerDelegate {
@@ -17,10 +19,68 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIPopoverPresentationCont
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /// Set default value of UserDefault.
         UserDefaults.standard.register(defaults: ["mySelect": 0])
+        
+        UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+        
+        
         return true
     }
+    
+    
+    var arrayPlace = ["測站"]
+    var arrayAQI = ["取得中..."]
+    var arrayStatus = ["品質狀態"]
+    
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
 
+        if let vc = window?.rootViewController as? ViewController {
+
+//            vc.updateUI(siteNameAD: "123", aqiDataAD: "123", statusAD: "123")
+    
+            let id = UserDefaults.standard.integer(forKey: "mySelect")
+            let url = "https://opendata.epa.gov.tw/ws/Data/AQI/?$format=json"
+            Alamofire.request(url).responseJSON { (response) in
+                if response.result.isSuccess {
+
+                    let json: JSON = JSON(response.result.value!)
+
+                    self.arrayPlace.removeAll()
+                    self.arrayAQI.removeAll()
+                    self.arrayStatus.removeAll()
+
+                    /// According to SwiftyJSON documentation, use following for loop when json is .Array
+                    // _ was "index"
+                    for (_, subJson):(String, JSON) in json {
+
+                        let SiteName = subJson["SiteName"].string
+                        let County = subJson["County"].string
+                        let Place = "\(County!) \(SiteName!)"
+                        self.arrayPlace.append(Place)
+
+                        let AQI = subJson["AQI"].string
+                        self.arrayAQI.append(AQI!)
+
+                        let Status = subJson["Status"].string
+                        self.arrayStatus.append(Status!)
+                    }
+                    vc.updateUI(siteNameAD: self.arrayPlace[id], aqiDataAD: self.arrayAQI[id], statusAD: self.arrayStatus[id])
+                    completionHandler(.newData)
+                    
+                    
+                } else if response.result.isFailure {
+                    completionHandler(.failed)
+                } // .if statement - response
+            } // .Alamofire responseJSON
+            
+        }
+    }
+    
+    
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -89,6 +149,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIPopoverPresentationCont
             }
         }
     }
-
+    
 }
 

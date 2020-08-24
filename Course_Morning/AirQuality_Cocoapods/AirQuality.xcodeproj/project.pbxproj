@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C24909822BF5E0D00B002B4 /* Pods_AirQualityWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6092D0422FFAF01108847D2 /* Pods_AirQualityWidget.framework */; };
 		4C2D34AC22B4D5B400260995 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2D34AB22B4D5B400260995 /* SettingViewController.swift */; };
+		4C4AA1F622BE30A900E1D5BE /* Pods_AirQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4AA1F722BE30A900E1D5BE /* Pods_AirQuality.framework */; };
 		4C4FC02C227B2801007A4EB7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBAB39E2269D83C0014EA8E /* NotificationCenter.framework */; };
 		4C4FC02F227B2801007A4EB7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FC02E227B2801007A4EB7 /* TodayViewController.swift */; };
 		4C4FC032227B2801007A4EB7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4FC030227B2801007A4EB7 /* MainInterface.storyboard */; };
@@ -19,6 +21,8 @@
 		4C95B9E622674A5600A6FB7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C95B9E522674A5600A6FB7F /* Assets.xcassets */; };
 		4C95B9E922674A5600A6FB7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C95B9E722674A5600A6FB7F /* LaunchScreen.storyboard */; };
 		4C9A705922B4F5FF00BD5650 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A705822B4F5FF00BD5650 /* TableViewCell.swift */; };
+		4CFC111B22BD255E00E288B7 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC111A22BD255E00E288B7 /* TestingViewController.swift */; };
+		4CFC111D22BD2AE200E288B7 /* TestingViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC111C22BD2AE200E288B7 /* TestingViewControllerCell.swift */; };
 		837D3F3DB41FB9FFB09AB354 /* Pods_AirQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62CFF7724FAE0D95EF44A9A /* Pods_AirQuality.framework */; };
 		9AB5A651F553862774714DA0 /* Pods_AirQualityWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6092D0422FFAF01108847D2 /* Pods_AirQualityWidget.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +55,13 @@
 		3CDF2D688A157F3FD9AF7F9F /* Pods-AirQuality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQuality.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirQuality/Pods-AirQuality.release.xcconfig"; sourceTree = "<group>"; };
 		437212A3BABA72395F166542 /* Pods-AirQualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQualityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirQualityTests/Pods-AirQualityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4856D5E7E3DB02197B14F287 /* Pods-AirQualityWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQualityWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirQualityWidget/Pods-AirQualityWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		4C24909922BF721400B002B4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		4C24909A22BF721400B002B4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4C24909B22BF721400B002B4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		4C2490A322BF73A900B002B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4C2490A522BF741D00B002B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainInterface.strings; sourceTree = "<group>"; };
 		4C2D34AB22B4D5B400260995 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4C4AA1F722BE30A900E1D5BE /* Pods_AirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AirQuality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4FC02B227B2801007A4EB7 /* AirQualityWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AirQualityWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4FC02E227B2801007A4EB7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		4C4FC031227B2801007A4EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -69,6 +79,8 @@
 		4C95B9EA22674A5600A6FB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C9A705822B4F5FF00BD5650 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4CBAB39E2269D83C0014EA8E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4CFC111A22BD255E00E288B7 /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		4CFC111C22BD2AE200E288B7 /* TestingViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewControllerCell.swift; sourceTree = "<group>"; };
 		8920A09EBFC1F6EB9B8A4DB8 /* Pods-AirQuality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQuality.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirQuality/Pods-AirQuality.debug.xcconfig"; sourceTree = "<group>"; };
 		8B72E434609C984106CA0909 /* Pods-AirQualityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQualityUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirQualityUITests/Pods-AirQualityUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A176D05488ECB33CB323726C /* Pods-AirQualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQualityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirQualityTests/Pods-AirQualityTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4AA1F622BE30A900E1D5BE /* Pods_AirQuality.framework in Frameworks */,
 				4C4FC02C227B2801007A4EB7 /* NotificationCenter.framework in Frameworks */,
 				9AB5A651F553862774714DA0 /* Pods_AirQualityWidget.framework in Frameworks */,
 			);
@@ -92,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C24909822BF5E0D00B002B4 /* Pods_AirQualityWidget.framework in Frameworks */,
 				837D3F3DB41FB9FFB09AB354 /* Pods_AirQuality.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +153,8 @@
 				4C2D34AB22B4D5B400260995 /* SettingViewController.swift */,
 				4C9A705822B4F5FF00BD5650 /* TableViewCell.swift */,
 				4C95B9DF22674A5600A6FB7F /* Main.storyboard */,
+				4CFC111A22BD255E00E288B7 /* TestingViewController.swift */,
+				4CFC111C22BD2AE200E288B7 /* TestingViewControllerCell.swift */,
 				4C95B9E522674A5600A6FB7F /* Assets.xcassets */,
 				4C95B9E722674A5600A6FB7F /* LaunchScreen.storyboard */,
 				4C95B9EA22674A5600A6FB7F /* Info.plist */,
@@ -150,6 +166,7 @@
 		4CBAB39D2269D83C0014EA8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C4AA1F722BE30A900E1D5BE /* Pods_AirQuality.framework */,
 				4C8C27B222A6B62E00E9E149 /* Alamofire.framework */,
 				4CBAB39E2269D83C0014EA8E /* NotificationCenter.framework */,
 				B62CFF7724FAE0D95EF44A9A /* Pods_AirQuality.framework */,
@@ -241,6 +258,9 @@
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 						};
 					};
 				};
@@ -294,11 +314,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AirQuality/Pods-AirQuality-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +386,8 @@
 				4C9A705922B4F5FF00BD5650 /* TableViewCell.swift in Sources */,
 				4C95B9DE22674A5600A6FB7F /* ViewController.swift in Sources */,
 				4C95B9E422674A5600A6FB7F /* AirQuality.xcdatamodeld in Sources */,
+				4CFC111B22BD255E00E288B7 /* TestingViewController.swift in Sources */,
+				4CFC111D22BD2AE200E288B7 /* TestingViewControllerCell.swift in Sources */,
 				4C95B9DC22674A5600A6FB7F /* AppDelegate.swift in Sources */,
 				4C2D34AC22B4D5B400260995 /* SettingViewController.swift in Sources */,
 			);
@@ -380,6 +408,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C4FC031227B2801007A4EB7 /* Base */,
+				4C24909B22BF721400B002B4 /* zh-Hant */,
+				4C2490A522BF741D00B002B4 /* en */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -388,6 +418,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C95B9E022674A5600A6FB7F /* Base */,
+				4C24909922BF721400B002B4 /* zh-Hant */,
+				4C2490A322BF73A900B002B4 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -396,6 +428,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C95B9E822674A5600A6FB7F /* Base */,
+				4C24909A22BF721400B002B4 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -441,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -498,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -551,6 +586,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AirQuality/AirQuality.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDHY9LRPU4;
 				INFOPLIST_FILE = AirQuality/Info.plist;
@@ -558,6 +594,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.txwstudio.trevorwu.AirQuality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -570,6 +607,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AirQuality/AirQuality.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDHY9LRPU4;
 				INFOPLIST_FILE = AirQuality/Info.plist;
@@ -577,6 +615,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.txwstudio.trevorwu.AirQuality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

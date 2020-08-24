@@ -59,7 +59,20 @@ class SettingViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        mySelect = indexPath.row
-        UserDefaults.standard.set(indexPath.row, forKey: "mySelect")
+        
+        switch UIDevice.current.userInterfaceIdiom {
+        case .phone:
+            UserDefaults.standard.set(indexPath.row, forKey: "mySelect")
+            dismiss(animated: true, completion: nil)
+        case .pad:
+            UserDefaults.standard.set(indexPath.row, forKey: "mySelect")
+        case .unspecified:
+            UserDefaults.standard.set(indexPath.row, forKey: "mySelect")
+        case .tv:
+            UserDefaults.standard.set(indexPath.row, forKey: "mySelect")
+        case .carPlay:
+            UserDefaults.standard.set(indexPath.row, forKey: "mySelect")
+        }
     }
 
 

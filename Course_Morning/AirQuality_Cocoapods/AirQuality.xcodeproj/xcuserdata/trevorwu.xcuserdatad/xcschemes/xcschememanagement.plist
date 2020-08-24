@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>AirQualityBackground.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>AirQualityWedget.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,7 +22,20 @@
 		<key>AirQualityWidget.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4C4FC02A227B2801007A4EB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C95B9D722674A5600A6FB7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
